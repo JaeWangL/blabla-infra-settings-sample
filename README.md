@@ -1,6 +1,10 @@
-# BlaBla Discovery Server
+# BlaBla Config Settings
 
-BlaBla is location-based social media service. This release intends to share a simplified version of Expo apps and Microservice architecture. This repository contains discovery server with Eureka and Jit is used for docker
+BlaBla is location-based social media service. This release intends to share a simplified version of Expo apps and Microservice architecture. This repository contains setting files for config server with Spring Cloud Config
+
+# Attention
+
+This reposotiry is only for storing setting files for Spring Cloud Config. You have to load files in this repo using Cloud Server
 
 # BlaBla Repos
 
