@@ -1,0 +1,28 @@
+
+   
+app:
+  mysql:
+    host: your_db_host
+    port: 3306
+    user: your_db_user
+    password: your_db_pass
+    database: your_db_name
+  kafka:
+    group:
+      createdPosts: on-created-posts-group
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://${app.mysql.host}:${app.mysql.port}/${app.mysql.database}?useSSL=true&requireSSL=false&serverTimezone=UTC
+    username: ${app.mysql.user}
+    password: ${app.mysql.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
